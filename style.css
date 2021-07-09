@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --StrongCyan: hsl(171, 66%, 44%);
+  --LightBlue: hsl(233, 100%, 69%);
+  --DarkGrayishBlue: hsl(210, 10%, 33%);
+  --GrayishBlue: hsl(201, 11%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+header {
+  background: url(./images/bg-header-desktop.png);
+  background-size: cover;
+  height: 70vh;
+  text-align: center;
+}
+
+header .container {
+  padding-top: 100px;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+header .container p {
+  width: 40%;
+  margin: 10px auto;
+  color: var(--GrayishBlue);
+}
+
+header .container .buttons {
+  margin-top: 30px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-right: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.ios {
+  background-color: var(--StrongCyan);
+  box-shadow: 0px 5px 4px var(--StrongCyan);
+}
+
+button.mac {
+  background-color: var(--LightBlue);
+  box-shadow: 0px 5px 4px var(--LightBlue);
+}
+
+/* section-1 */
+.snippets {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.snippets p {
+  color: var(--GrayishBlue);
+  width: 47%;
+  margin: 20px auto;
+}
+
+.snippets h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* section-2 */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wrapper .left {
+  transform: translateX(-100px);
+}
+
+.wrapper .left .logo {
+  width: 100%;
+}
+
+.wrapper .right {
+  margin: 50px auto;
+}
+
+.right .wrap {
+  margin-bottom: 30px;
+}
+
+.right .wrap h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.right .wrap span {
+  color: var(--GrayishBlue);
+  display: block;
+  width: 50%;
+  font-size: 18px;
+}
+
+/* section-4 */
+.image {
+  text-align: center;
+}
+
+.image .logo {
+  width: 80%;
+}
+
+/* section-6 */
+.task {
+  margin-bottom: 50px;
+}
+.task .wrapper {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.task .wrapper .block img,
+.task .wrapper .block h4 {
+  margin: auto;
+}
+
+.task .wrapper .block p {
+  width: 70%;
+  margin: auto;
+  color: var(--GrayishBlue);
+}
+
+/* section-7 */
+.company .wrapper {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* section-8 */
+.snippets .buttons {
+  margin-top: 30px;
+}
+
+/* footer */
+.footer .foot {
+  padding: 35px;
+  background-color: #f3f5f7;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .foot img {
+  width: 5%;
+}
+
+.footer .foot .list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .foot .list span {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.footer .foot .list span:hover {
+  color: var(--StrongCyan);
+}
+
+.footer .foot .sosmed {
+  display: flex;
+  align-items: center;
+}
+
+.footer .foot .sosmed img {
+  width: 100%;
+  object-fit: cover;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 100%;
+  }
+  header .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  header .container p {
+    width: 100%;
+  }
+  header .container .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .container .buttons button {
+    margin-bottom: 20px;
+  }
+
+  /* section-1 */
+  .snippets {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+  }
+  .snippets p {
+    width: 100%;
+  }
+
+  /* section-2 */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .wrapper .left {
+    transform: translateX(0);
+  }
+
+  .wrapper .right {
+    margin: auto;
+  }
+
+  .right .wrap {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .right .wrap span {
+    width: 100%;
+  }
+
+  /* section-6 */
+  .task {
+    margin-bottom: 10px;
+  }
+
+  .task .wrapper .block {
+    margin-bottom: 30px;
+  }
+
+  .task .wrapper .block h4 {
+    margin: 20px 0;
+  }
+
+  .task .wrapper .block p {
+    width: 100%;
+  }
+
+  /* section-7 */
+  .company .wrapper {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .company .wrapper img {
+    margin-bottom: 70px;
+  }
+
+  /* section-8 */
+  .snippets .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .snippets .buttons button {
+    margin-bottom: 20px;
+  }
+
+  /* footer */
+  .footer .foot {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .foot img {
+    width: 20%;
+    margin: 20px auto;
+  }
+
+  .footer .foot .sosmed img {
+    width: 10%;
+    margin: auto;
+  }
+
+  .footer .foot .sosmed {
+    margin-top: 20px;
+  }
+}
